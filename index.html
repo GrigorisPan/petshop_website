@@ -31,7 +31,7 @@
       </div>
 
       <!-- Top Bar start -->
-      <div class="d-md-block d-none bg-light py-1">
+      <div class="d-lg-block d-none bg-light py-1">
         <div
           class="container-lg-fluid align-items-center justify-content-around topbar-content text-nowrap px-lg-5 px-1"
         >
@@ -82,7 +82,7 @@
               /></i>
             </div>
             <!-- Search Bar -->
-            <div class="col-md-6 col-8">
+            <div class="col-md-6 col-8 search-container">
               <div class="search-header">
                 <input
                   type="search"
@@ -128,26 +128,22 @@
     </div>
     <!-- Header end -->
 
-    <!-- Features -->
-    <div
-      class="bg-light container-fluid px-md-4 py-md-3 d-md-block d-none mw-fit mt-2"
-    >
+    <!-- Features Desktop-->
+    <div class="container-fluid d-md-block d-none features-container">
       <div class="row gap-3 justify-content-center align-items-center">
         <!-- Single Features -->
-        <div class="col text-center">
-          <h4 class="fs-6 text-nowrap fw-bold">ΤΗΛΕΦΩΝΙΚΕΣ ΠΑΡΑΓΓΕΛΙΕΣ</h4>
+        <div class="col features-text">
+          <h6>ΤΗΛΕΦΩΝΙΚΕΣ ΠΑΡΑΓΓΕΛΙΕΣ</h6>
           <p className="text-muted text-xs md:text-sm ">2310610066</p>
         </div>
         <!-- Single Features -->
-        <div class="col text-center">
-          <h4 class="fs-6 text-nowrap fw-bold">
-            ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ ΘΕΣΣΑΛΟΝΙΚΗ
-          </h4>
+        <div class="col features-text">
+          <h6>ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ ΘΕΣΣΑΛΟΝΙΚΗ</h6>
           <p className="text-muted text-xs md:text-sm ">με αγορές 29 και άνω</p>
         </div>
         <!-- Single Features -->
-        <div class="col text-center">
-          <h4 class="fs-6 text-nowrap fw-bold">ΠΑΡΑΔΟΣΗ ΣΕ 12-24 ΩΡΕΣ*</h4>
+        <div class="col features-text">
+          <h6 class="">ΠΑΡΑΔΟΣΗ ΣΕ 12-24 ΩΡΕΣ*</h6>
           <p className="text-muted text-xs md:text-sm ">
             δες αναλυτικα<span
               ><a class="text-muted fw-semibold text-decoration-none" href="#">
@@ -158,10 +154,8 @@
           <!-- Single Features -->
         </div>
         <!-- Single Features -->
-        <div class="col text-center">
-          <h4 class="fs-6 text-nowrap fw-bold">
-            ΔΕΥΤΕΡΑ ΜΕ ΠΑΡΑΣΚΕΥΗ 12.00-17.00
-          </h4>
+        <div class="col features-text">
+          <h6 class="">ΔΕΥΤΕΡΑ ΜΕ ΠΑΡΑΣΚΕΥΗ 12.00-17.00</h6>
           <p className="text-muted text-xs md:text-sm ">
             επικοινώνησε μαζί μας
           </p>
@@ -193,7 +187,7 @@
     <!-- Desktop Nav End-->
 
     <!-- Mobile Nav -->
-    <div class="bg-light">
+    <div class="mobile-container">
       <div
         class="d-flex d-md-none justify-content-around mt-1 align-items-center"
       >
@@ -246,6 +240,41 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Mobile-->
+    <div class="container-fluid d-block d-md-none features-container">
+      <div class="row gap-3 justify-content-center align-items-center">
+        <!-- Single Features -->
+        <div class="col features-text">
+          <h6>ΤΗΛΕΦΩΝΙΚΕΣ ΠΑΡΑΓΓΕΛΙΕΣ</h6>
+          <p className="text-muted text-xs md:text-sm ">2310610066</p>
+        </div>
+        <!-- Single Features -->
+        <div class="col features-text">
+          <h6>ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ ΘΕΣΣΑΛΟΝΙΚΗ</h6>
+          <p className="text-muted text-xs md:text-sm ">με αγορές 29 και άνω</p>
+        </div>
+        <!-- Single Features -->
+        <div class="col features-text">
+          <h6 class="">ΠΑΡΑΔΟΣΗ ΣΕ 12-24 ΩΡΕΣ*</h6>
+          <p className="text-muted text-xs md:text-sm ">
+            δες αναλυτικα<span
+              ><a class="text-muted fw-semibold text-decoration-none" href="#">
+                εδω
+              </a></span
+            >
+          </p>
+          <!-- Single Features -->
+        </div>
+        <!-- Single Features -->
+        <div class="col features-text">
+          <h6 class="">ΔΕΥΤΕΡΑ ΜΕ ΠΑΡΑΣΚΕΥΗ 12.00-17.00</h6>
+          <p className="text-muted text-xs md:text-sm ">
+            επικοινώνησε μαζί μας
+          </p>
         </div>
       </div>
     </div>
@@ -337,10 +366,12 @@
                 /></a>
                 <div class="product-info">
                   <span class="product-label">Νεο</span>
-                  <p class="product-title">
-                    Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball, Διαστάσεων:
-                    5cm
-                  </p>
+                  <a href="#"
+                    ><p class="product-title">
+                      Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
+                      Διαστάσεων: 5cm
+                    </p></a
+                  >
                   <p class="product-category">Παιχνίδι</p>
                   <div class="product-price">
                     <p class="product-price-old">€2.90</p>
@@ -376,10 +407,12 @@
                 /></a>
                 <div class="product-info">
                   <span class="product-label">Νεο</span>
-                  <p class="product-title">
-                    Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball, Διαστάσεων:
-                    5cm
-                  </p>
+                  <a href=""
+                    ><p class="product-title">
+                      Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
+                      Διαστάσεων: 5cm
+                    </p></a
+                  >
                   <p class="product-category">Παιχνίδι</p>
                   <div class="product-price">
                     <p class="product-price-old">€2.90</p>
@@ -415,10 +448,12 @@
                 /></a>
                 <div class="product-info">
                   <span class="product-label">Νεο</span>
-                  <p class="product-title">
-                    Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball, Διαστάσεων:
-                    5cm
-                  </p>
+                  <a href="#">
+                    <p class="product-title">
+                      Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
+                      Διαστάσεων: 5cm
+                    </p></a
+                  >
                   <p class="product-category">Παιχνίδι</p>
                   <div class="product-price">
                     <p class="product-price-old">€2.90</p>
@@ -454,10 +489,12 @@
                 /></a>
                 <div class="product-info">
                   <span class="product-label">Νεο</span>
-                  <p class="product-title">
-                    Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball, Διαστάσεων:
-                    5cm
-                  </p>
+                  <a href="#"
+                    ><p class="product-title">
+                      Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
+                      Διαστάσεων: 5cm
+                    </p></a
+                  >
                   <p class="product-category">Παιχνίδι</p>
                   <div class="product-price">
                     <p class="product-price-old">€2.90</p>
@@ -552,10 +589,12 @@
                   /></a>
                   <div class="product-info">
                     <span class="product-label">Νεο</span>
-                    <p class="product-title">
-                      Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
-                      Διαστάσεων: 5cm
-                    </p>
+                    <a href="#"
+                      ><p class="product-title">
+                        Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
+                        Διαστάσεων: 5cm
+                      </p></a
+                    >
                     <p class="product-category">Παιχνίδι</p>
                     <div class="product-price">
                       <p class="product-price-old">€2.90</p>
@@ -588,10 +627,12 @@
                   /></a>
                   <div class="product-info">
                     <span class="product-label">Νεο</span>
-                    <p class="product-title">
-                      Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
-                      Διαστάσεων: 5cm
-                    </p>
+                    <a href="#"
+                      ><p class="product-title">
+                        Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
+                        Διαστάσεων: 5cm
+                      </p></a
+                    >
                     <p class="product-category">Παιχνίδι</p>
                     <div class="product-price">
                       <p class="product-price-old">€2.90</p>
@@ -627,10 +668,12 @@
                   /></a>
                   <div class="product-info">
                     <span class="product-label">Νεο</span>
-                    <p class="product-title">
-                      Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
-                      Διαστάσεων: 5cm
-                    </p>
+                    <a href="#">
+                      <p class="product-title">
+                        Παιχνίδι Trixie Μπάλα Μπέιζμπολ Denta Fun Ball,
+                        Διαστάσεων: 5cm
+                      </p></a
+                    >
                     <p class="product-category">Παιχνίδι</p>
                     <div class="product-price">
                       <p class="product-price-old">€2.90</p>
@@ -1049,6 +1092,123 @@
               <p>Τηλέφωνο: 231 061 0066</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid newsletter-wrapper min-width">
+      <div class="container-fluid newsletter-container">
+        <div class="row newsletter-section">
+          <img class="newsletter-bg" src="./asset/bg-newsletter.jpg" />
+          <div class="row newsletter-row">
+            <div class="col-1 col-md-2 col-lg-4 newsletter-image-ball">
+              <img class="newsletter-ball" src="./asset/ball.png" />
+            </div>
+            <div class="col-1 col-md-2 col-lg-3 newsletter-image-cat">
+              <img class="newsletter-cat" src="./asset/cat.png" />
+            </div>
+            <div class="col-9 col-md-8 col-lg-5 newsletter-form">
+              <form action="">
+                <div class="form-items">
+                  <h4>Εγγραφή στο newsletter</h4>
+                  <p>
+                    Μάθε πρώτος για όλα τα νέα προϊόντα και τις προσφορές μας!
+                    Εγγράψου στο nesletter μας.
+                  </p>
+                  <div>
+                    <input
+                      class="form-input"
+                      type="email"
+                      placeholder="Το e-mail σου"
+                    />
+                  </div>
+                  <button class="btn-newsletter" type="submit" class="">
+                    Εγγραφή
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Sectionb -->
+    <div class="wrapper min-width">
+      <div class="container footer-container">
+        <div class="row">
+          <div class="col-md-6 footer-links">
+            <div class="footer-links-column">
+              <a href="/">Η εταιρεία μας </a>
+              <a href="/"> Μανιφέστο </a>
+              <a href="/"> Καταστήματα</a>
+              <a href="/"> Όροι Χρήσης </a>
+              <a href="/">Δεοντολογία</a>
+              <a href="/"> Sitemap </a>
+              <a href="/"> Πολιτική απορρήτου</a>
+              <a href="/"> Πολιτική cookies </a>
+            </div>
+            <div class="footer-links-column">
+              <a href="/">Ο λογαριασμός μου </a>
+              <a href="/"> Παραγγελίες</a>
+              <a href="/"> Αγαπημένα</a>
+              <a href="/"> Διαθεσιμότητες </a>
+              <a href="/"> Τρόποι παραγγελίας</a>
+              <a href="/"> Τρόποι αποστολής</a>
+              <a href="/"> Τρόποι πληρωμής</a>
+              <a href="/"> Επιστροφές</a>
+            </div>
+          </div>
+          <div class="col-md-6 footer-contact">
+            <div class="footer-contact-left">
+              <h6>Επικοινωνία</h6>
+              <div>
+                <p>E-mail: ask@toulias-petshop.gr</p>
+                <p>
+                  Δευτέρα έως Παρασκευή<br />
+                  10.00 - 16.00
+                </p>
+              </div>
+              <div>
+                <p>Καλέστε μας!</p>
+                <button class="btn-callus">
+                  <i class="fa fa-phone" aria-hidden="true"></i> 2310610066
+                </button>
+              </div>
+            </div>
+            <div class="footer-contact-right">
+              <div class="footer-logo">
+                <i href="#"><img src="./asset/footer-toulias.png" /></i>
+              </div>
+              <div>
+                <div class="footer-podcast">
+                  <i href="#"><img src="./asset/podcast.png" /></i>
+                </div>
+              </div>
+              <div class="footer-icons">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid payment-container">
+        <div class="row payment-methods">
+          <p>VISA / MASTERCARD / VIVA PAYMENTS / PAYPAL / PAYSAFE</p>
         </div>
       </div>
     </div>
